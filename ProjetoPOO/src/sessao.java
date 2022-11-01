@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class sessao {
+public class Sessao {
     private List<Jogador> playersCadastrados;
     private Jogador playerAtual;
 

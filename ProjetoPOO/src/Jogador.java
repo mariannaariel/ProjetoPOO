@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.List;
+
 
 public class Jogador {
     
@@ -19,7 +21,7 @@ public class Jogador {
     }
 
     public Boolean confereSenha(String senha){
-        return this.senha.equals(senha)
+        return this.senha.equals(senha);
     }
 
     public String getNome() {

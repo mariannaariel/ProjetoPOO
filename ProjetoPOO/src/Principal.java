@@ -1,5 +1,8 @@
 public class Principal {
     public static void main(String[] args) {
-        System.out.println("OI");
+
+        Jogador teste = new Jogador("A", "1");
+        System.out.println(teste.confereSenha("1"));
+
     }
 }
