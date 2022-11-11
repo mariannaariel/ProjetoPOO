@@ -19,9 +19,9 @@ public class Biblioteca {
         loja.addJogo(bloodborne);
 
         Jogo ghost = new Jogo("Ghost Of Tsushima", " A história acompanha Jin Sakai, um samurai que precisa proteger a Ilha de Tsushima durante a primeira invasão mongol do Japão.", 50);
-        bloodborne.setConquista("Fashion", "Obtenha 30 peças de equipamentos cosméticos", 15);
-        bloodborne.setConquista("Estudante", "Aprenda as posturas de combate da Pedra, da Água, do Vento e da Lua", 30);
-        bloodborne.setConquista("Libertação", "Liberte toda a ilha de Tsushima", 100);
+        ghost.setConquista("Fashion", "Obtenha 30 peças de equipamentos cosméticos", 15);
+        ghost.setConquista("Estudante", "Aprenda as posturas de combate da Pedra, da Água, do Vento e da Lua", 30);
+        ghost.setConquista("Libertação", "Liberte toda a ilha de Tsushima", 100);
 
         loja.addJogo(ghost);
 
@@ -32,6 +32,13 @@ public class Biblioteca {
         undertale.setConquista("Que piada horrível", "Você ouviu a ideia do papyrus", 50);
 
         loja.addJogo(undertale);
+
+        Jogo deltarune = new Jogo("Deltarune", " O jogador controla um humano, Kris, em um mundo onde os monstros vivem na superfície da Terra. Kris e uma colega de classe chamada Susie caem da Terra em um lugar chamado Mundo das Trevas", 50);
+        deltarune.setConquista("Finalmente", "Você levantou para ir pra escola", 15);
+        deltarune.setConquista("Fluffy Boy", "Você conheceu Ralsei", 30);
+        deltarune.setConquista("Susie ", "Você fez um trabalho em grupo com susie", 70);
+
+        loja.addJogo(deltarune);
         
         AlbumMusical albumDoom = new AlbumMusical("Álbum Doom", "Album do jogo Doom", 30);
         albumDoom.setMusica("The Only Thing They Fear Is You");
@@ -67,7 +74,18 @@ public class Biblioteca {
 
         loja.addAlbum(albumGhost);
 
+        AlbumMusical albumUndertale = new AlbumMusical("Undertale Soundtrack", "Album do Undertale", 30);
+        albumUndertale.setMusica("Once Upon a Time");
+        albumUndertale.setMusica("Start Menu");
+        albumUndertale.setMusica("Your Best Friend");
+        albumUndertale.setMusica("Fallen Down");
+        albumUndertale.setMusica("Ruins");
+        albumUndertale.setMusica("Uwa!! So Temperate");
+        albumUndertale.setMusica("Anticipation");
+        albumUndertale.setMusica("Unnecessary Tension");
+        albumUndertale.setMusica("Enemy Approaching");
 
+        loja.addAlbum(albumUndertale);
 
 
     }
