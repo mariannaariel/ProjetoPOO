@@ -28,7 +28,7 @@ public class Biblioteca {
         
         Jogo undertale = new Jogo("Undertale", " Undertale se passa em Underground (em tradução livre, uma enorme caverna subterrânea para onde monstros, que uma vez viviam harmoniosamente com os humanos na superfície, foram banidos depois de perder uma guerra contra a humanidade.", 50);
         undertale.setConquista("Boa Sorte", "Você chegou no último ponto de salvamento antes do jogo terminar", 100);
-        undertale.setConquista("Dutututu", "Você encontrou o SAMS", 80);
+        undertale.setConquista("Dutututu", "Você encontrou o SANS", 80);
         undertale.setConquista("Que piada horrível", "Você ouviu a ideia do papyrus", 50);
 
         loja.addJogo(undertale);
@@ -39,6 +39,15 @@ public class Biblioteca {
         deltarune.setConquista("Susie ", "Você fez um trabalho em grupo com susie", 70);
 
         loja.addJogo(deltarune);
+
+        Jogo nier = new Jogo("Nier Replicant", "O ano é 3465, Mostros das sombras e uma doença fatal ameaçam a sobrevivência da humanidade.Enquanto um mundo devastado tenta se reconstruir, um jovem faz uma promessa dolorosa para sua irmã, e três companheiros improváveis revelarão o verdadeiro custo da verdade.", 70);
+        nier.setConquista("O livro da lenda", "Grimoire Weiss se juntou ao seu grupo", 50);
+        nier.setConquista("Combo Master", "Faça um combo de 100 hits", 100);
+        nier.setConquista("Obrigada", "Veja o terceiro final (Final C)", 200);
+
+        loja.addJogo(nier);
+
+
         
         AlbumMusical albumDoom = new AlbumMusical("Álbum Doom", "Album do jogo Doom", 30);
         albumDoom.setMusica("The Only Thing They Fear Is You");
@@ -87,6 +96,25 @@ public class Biblioteca {
 
         loja.addAlbum(albumUndertale);
 
+        AlbumMusical albumDeltarune = new AlbumMusical("Deltarune soundtrack", "Album do Deltarune", 30);
+        albumUndertale.setMusica("Field of Hopes and Dreams");
+        albumUndertale.setMusica("Vs. Susie");
+        albumUndertale.setMusica("THE WORLD REVOLVING");
+        albumUndertale.setMusica("Empty Town");
+        albumUndertale.setMusica("Lancer");
+        albumUndertale.setMusica("You Can Always Come Home");
+
+        loja.addAlbum(albumDeltarune);
+
+        AlbumMusical albumNier = new AlbumMusical("NieR Replicant ver.1.22474487139... Original Soundtrack", "Álbum do Nier", 30);
+        albumNier.setMusica("ShadowLord");
+        albumNier.setMusica("Gods Bound By Rules");
+        albumNier.setMusica("Kaine Salvation");
+        albumNier.setMusica("Song of the Ancients");
+        albumNier.setMusica("The Ultimate Weapon");
+
+
+        loja.addAlbum(albumNier);
 
     }
 
