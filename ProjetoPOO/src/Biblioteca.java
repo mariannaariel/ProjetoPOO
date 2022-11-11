@@ -16,16 +16,30 @@ public class Biblioteca {
         bloodborne.setConquista("Você morreu 200 vezes", "Não se preocupe é normal", 30);
         bloodborne.setConquista("Oh! Good Hunter", "Parabens! Você terminou o jogo", 100);
 
-        loja = new Loja();
         loja.addJogo(bloodborne);
 
+        Jogo ghost = new Jogo("Ghost Of Tsushima", " A história acompanha Jin Sakai, um samurai que precisa proteger a Ilha de Tsushima durante a primeira invasão mongol do Japão.", 50);
+        bloodborne.setConquista("Fashion", "Obtenha 30 peças de equipamentos cosméticos", 15);
+        bloodborne.setConquista("Estudante", "Aprenda as posturas de combate da Pedra, da Água, do Vento e da Lua", 30);
+        bloodborne.setConquista("Libertação", "Liberte toda a ilha de Tsushima", 100);
 
+        loja.addJogo(ghost);
+
+        
+        Jogo undertale = new Jogo("Undertale", " Undertale se passa em Underground (em tradução livre, uma enorme caverna subterrânea para onde monstros, que uma vez viviam harmoniosamente com os humanos na superfície, foram banidos depois de perder uma guerra contra a humanidade.", 50);
+        undertale.setConquista("Boa Sorte", "Você chegou no último ponto de salvamento antes do jogo terminar", 100);
+        undertale.setConquista("Dutututu", "Você encontrou o SAMS", 80);
+        undertale.setConquista("Que piada horrível", "Você ouviu a ideia do papyrus", 50);
+
+        loja.addJogo(undertale);
+        
         AlbumMusical albumDoom = new AlbumMusical("Álbum Doom", "Album do jogo Doom", 30);
         albumDoom.setMusica("The Only Thing They Fear Is You");
         albumDoom.setMusica("BFG Division");
         albumDoom.setMusica("Metahook");
 
         loja.addAlbum(albumDoom);
+
 
         AlbumMusical albumBloodborne = new AlbumMusical("Bloodborne Original Soundtrack", "Album do jogo Bloordborne", 30);
         albumBloodborne.setMusica("Omen");
@@ -42,6 +56,19 @@ public class Biblioteca {
         albumBloodborne.setMusica("Moonlit Melody");
 
         loja.addAlbum(albumBloodborne);
+
+        AlbumMusical albumGhost = new AlbumMusical("Ghost of Tsushima Original Soundtrack", "Album do jogo Ghost Of Tsushima", 30);
+        albumGhost.setMusica("The Way of the Ghost");
+        albumGhost.setMusica("Jin Sakai");
+        albumGhost.setMusica("Komoda Beach");
+        albumGhost.setMusica("The Way of the Samurai");
+        albumGhost.setMusica("Lord Shimura");
+        albumGhost.setMusica("No Mercy");
+
+        loja.addAlbum(albumGhost);
+
+
+
 
     }
 
